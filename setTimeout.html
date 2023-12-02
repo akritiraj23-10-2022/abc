@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and clearTimeout</title>
+    <style>
+    #test{
+        width:150px;
+        height: 150px;
+        background: red;
+    }
+    </style>
+</head>
+<body>
+    <div id="test"> </div>
+    <button onClick="stopAnimation()">stop animation </button>
+
+
+
+    <script>
+     var id= setTimeout(anim,5000);
+
+     function anim(){
+         var target = document.getElementById("test");
+         target.style.width ="500px";
+
+
+    function stopAnimation(){
+        clearTimeout(id);
+    }
+         //console.log("hello");
+     }
+    </script>
+</body>
+</html>

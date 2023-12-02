@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String methods</title>
+    <script>
+        //length property
+
+        var str = "This Property returns the number of character in the string";
+        var a = str.length;
+
+        document.write(a + "<br><br>");
+
+        //toLowerCase()
+        var a =str.toLowerCase();
+           document.write(a + "<br><br>");
+
+        //toUpperCase
+        var  a = str.toUpperCase();
+          document.write(a + "<br><br>");
+
+        //includes()
+         var a = str.includes("return");
+         document.write(a + "<br><br>");
+
+        //starstWith()
+         var a = str.startsWith("This");
+         document.write(a + "<br><br>");
+
+        //endsWith()
+        var a = str.endsWith("str");
+        document.write(a + "<br><br>");
+
+        //search()
+        var a = str.search("the");
+        document.write(a + "<br><br>");
+
+        //match()
+        var a =str.match(/the/g);
+         document.write(a + "<br><br>");
+
+       //indexOf()
+         var a =str.indexOf("the");
+         document.write(a + "<br><br>");
+
+      //lastIndexOf()
+        var a = str.lastIndexOf("the");
+        document.write(a + "<br><br>");
+
+      //replace()
+       var a = str.replace("the","a");
+       document.write(a + "<br><br>");
+
+       var a =str.replace(/the/g,"a");
+       document.write(a + "<br><br>");
+
+      //trim()
+      /*
+       var e = "   javascript    ";
+       var b = e.trim();
+       alert(b);
+      */
+
+      //charAt()
+       var a = str.charAt(3);
+       document.write(a + "<br><br>");
+
+      //charCodeAt()
+      // var a = str.charCodeAt(3)
+      // document.write(a + "<br><br>");
+
+     //coccat()
+     var str2 = "hello";
+     var a = str.concat(str2);
+     document.write(a + "<br><br>");
+
+    //split()
+     var a = str.split("a");
+     document.write(a + "<br><br>");
+
+    //repeat()
+     var a =str.repeat(2);
+     document.write(a + "<br><br>");
+    
+    //slice()
+    var a = str.slice(4,15);
+    document.write(a + "<br><br>");
+
+    //subStr()
+    var a = str.substr(2,5);
+    document.write(a + "<br><br>");
+
+    //substring()
+     var a = str.substring(3,7);
+     document.write(a + "<br><br>");
+
+    //toString()
+    var man = 50;
+    var sim = man.toString();
+    document.write(sim + 20 + "<br><br>");
+
+    var num = 12;
+
+    document.write("Output : " + num.toString(2));
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

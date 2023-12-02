@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            text-align: center;
+            color : red;
+        }
+
+        #abc {
+            text-align :center;
+            color :pink;
+            border : 2px dotted green;
+        }
+        .asd{
+            background:crimson;
+        }
+        
+        .xyz{
+            text-align:center;
+            color : blue;
+        }
+        </style>
+</head>
+<body>
+    <p class ="xyz">Every paragraph will be affected by the style</p>
+    <p> Manish kumar </p>
+    <p id ="abc" class = "asd tyu hgf"> "Hello world Good Morning</p>
+    <p>class selector select HTML element with a specific class attribute</p>
+
+
+    
+    <script>
+        var a;
+        //document.querySelector("#abc").style.backgroundColor = "tan";
+       // a = document.querySelector("#abc").style.color;
+       // document.write(element);
+
+     //  document.querySelector("#abc").classList.add("tyu","hgf");
+
+     document.querySelector("#abc").classList.remove("tyu");
+        a = document.querySelector("#abc").className;
+        console.log(a);
+    </script>
+</body>
+
+</html>

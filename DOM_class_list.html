@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            background: red;
+            border:2px solid black;
+        }
+        .xyz{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id ="wraper">
+    <div id = "header"  class ="abc xyz efg"> 
+        <h1> Manish kumar </h1>
+        </div>
+    </div>
+    <p id = "demo"></p>
+    <script>
+
+        //ADD
+
+      /*  document.getElementById("header").addEventListener("click",abc);
+
+        function abc(){
+            document.getElementById("header").classList.add("xyz","efg");
+        }
+        */
+        
+        //remove
+
+     /*   document.getElementById("header").addEventListener("click",abc);
+
+        function abc(){
+            document.getElementById("header").classList.remove("xyz");
+            var a =document.getElementById("header").classList;
+            console.log(a);
+        }
+        */
+
+       //length-:
+
+     /*   var a =document.getElementById("header").classList.length;
+            console.log(a);
+     */
+
+     //toggle-:
+
+    /* document.getElementById("header").addEventListener("click",abc);
+
+function abc(){
+    document.getElementById("header").classList.toggle("xyz");
+    var a =document.getElementById("header").classList;
+    console.log(a);
+}
+*/
+
+   //item-:
+/*   document.getElementById("header").addEventListener("click",abc);
+
+function abc(){
+ //   document.getElementById("header").classList.remove("xyz");
+    var a =document.getElementById("header").classList.item(0);
+    console.log(a);
+}
+*/
+
+//contains-:
+document.getElementById("header").addEventListener("click",abc);
+function abc(){
+ //   document.getElementById("header").classList.remove("xyz");
+    var a =document.getElementById("header").classList.contains("jhk");
+    console.log(a);
+}
+    </script>
+</body>
+</html>

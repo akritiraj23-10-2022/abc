@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Number method</title>
+    <script>
+    //Number()
+        var a = "99";
+        document.write( a + 10 + "<br> <br>");   
+
+        var num = Number(a);
+        document.write(num + "<br><br>");
+        document.write(num + + 10 + "<br><br>");
+
+        var b = true;
+        var n = Number(b);
+        document.write(n + "<br><br>");
+        document.write(n * 9 + "<br><br>");
+
+
+    //parseInt()
+       var c = 10.12;
+       document.write( c + "<br><br>");
+
+       var num = parseInt(c);
+       document.write(num + "<br><br>");
+
+    //parseFloat()
+       var  d = "10.45";
+       var num = parseFloat(d);
+       document.write(num + "<br><br>");
+       document.write( num * 5 + "<br><br>");
+
+    //Number.isFinite()
+      var k = 100;
+      var num = Number.isFinite(k);
+      document.write(num + "<br><br>");
+
+    //Number.isInteger()
+      var r = 100.9;
+      var num = Number.isInteger(r);
+      document.write(num + "<br><br>");
+
+    // toFixed()
+      var a = 5.89356;
+      var num = a.toFixed(3);
+      document.write(num + "<br><br>");
+
+    //toPrecision()
+      var e = 3.89;
+      var num = e.toPrecision(4);
+      document.write(num + "<br><br>");
+
+
+
+
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

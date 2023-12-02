@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParentNode and ParentElement </title>
+    <style>
+        #outer{
+            width:600px;
+            height:300px;
+            margin: 0 auto;
+            background-color:gold;
+        }
+        #inner{
+            width:550px;
+            height:900;
+            margin:50px  auto;
+            background-color: pink;
+        }
+        #inner div{
+            width:40px;
+            height:50px;
+            margin:10px;
+            background-color: blue;
+            float:left;
+            text-align:center;
+
+        }
+         
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <h2> Outer</h2>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id="child-C">C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+    </div>
+
+    <script>
+
+    //ParentElement-:
+    /*         document.getElementById("child-C").parentElement.style.background = "red";
+      var a =  document.getElementById("inner").parentElement;
+      console.log(a);
+    */
+
+
+    //parentNode-:
+    
+     document.getElementById("child-C").parentNode.style.background = "red";
+      var a =  document.getElementById("inner").parentNode;
+      console.log(a);
+
+    </script>
+</body>
+</html>

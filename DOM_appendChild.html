@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendChild and insertBefore </title>
+    <style>
+        h1{
+            text-align:center;
+            color:red;
+        }
+        #test{
+            width:600px;
+            height:500px;
+            border:2px solid black;
+            background-color:gold;
+            
+
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Manish kumar:DOM Append Methods </h1>
+
+    <div id="test"> This method returns element nide of a specied element.  </div>
+
+    <script>
+        var newElement = document.createElement("h2");
+
+        var newText = document.createTextNode("This is just text");
+
+        var newComment = document.createComment("This is just comment");
+
+     //appendChild-:   
+        newElement.appendChild(newText);
+
+     //   document.getElementById("test").appendChild(newElement);
+
+        document.getElementById("test").appendChild(newComment);
+        
+
+    //insertBefore-:
+      var target = document.getElementById("test");
+      target.insertBefore(newElement,target.childNodes[0]);
+
+      // console.log(newElement);
+     //  console.log(newComment);
+    </script>
+</body>
+</html>

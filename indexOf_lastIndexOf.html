@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array indexOf and lastIndexOf method</title>
+    <script>
+        var a = ["aman","manish","suman","aman","manish","sushil","vinod","manish"];
+        document.write(a + "<br> <br>");
+
+        var b =a.indexOf("aman");
+        document.write(b + "<br> <br>");
+
+        var b =a.indexOf("aman", 2);
+        document.write(b + "<br> <br>");
+
+        var b =a.indexOf("manni", 2);     //indexOf return value -1 when the word we will search is not found in array
+        document.write(b + "<br> <br>");
+
+
+
+        var c = ["aman","manish","suman","aman","manish","sushil","vinod","manish"];
+          document.write( c +  "<br><br>");
+
+          var d =c.lastIndexOf("manish");
+          document.write( d + "<br> <br>");
+
+          var d =c.lastIndexOf("manish",2);
+          document.write( d + "<br> <br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

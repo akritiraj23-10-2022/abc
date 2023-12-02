@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array find and findIndex method </title>
+    <script>
+        var ages = [10,23,19,20];
+        document.write(ages + "<br><br>");
+
+        var b = ages.find(checkAdult);
+        document.write(b +"<br><br>");
+
+        function checkAdult(age)
+        {
+            return age >= 18;
+        }
+
+
+        var ages = [10,23,19,20];
+        document.write(ages + "<br><br>");
+
+        var b = ages.findIndex(checkAdult);
+        document.write(b +"<br><br>");
+
+        function checkAdult(age)
+        {
+            return age >= 18;
+        }
+   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

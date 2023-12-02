@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Objects</title>
+    <script>
+        var a = {
+            fname : 'Manish',
+            lname : 'kumar',
+            age : 19,
+            email : 'manishkeshri1710@gmail.com',
+            favMovie : ["Dhoom","RaOne","Man"],  //Array in Object
+            living : {
+                'city' : 'Bihar',       //objects in object
+                'country' : 'India'
+            },  
+            salary : function()
+            {
+                return 25000;           // function in object
+            },
+            fullname : function()
+            {
+                return this.fname + " " + this.lname;
+            }
+        }
+        //document.write(a);
+
+        document.write(a.fname + "<br> <br>");
+
+        document.write(a.favMovie + "<br><br>");
+        document.write(a.favMovie[2] + "<br><br>");
+
+        document.write(a.salary() + "<br> <br>");
+
+        document.write(a.fullname() + "<br> <br>");
+
+        document.write(a.living.city + "<br> <br>")
+
+
+        console.log(a);
+        console.log(a.fname);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

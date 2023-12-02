@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM add Event Listener() </title>
+    <style>
+        #header{
+            background-color:red;
+            border:3px dotted black;
+        }
+        #manni{
+            background-color:blue;
+            border:2px dashed black;
+        }
+    </style>
+</head>
+<body>
+  <div id ="header" class ="abc">
+      <h1>Manish kumar </h1>
+  </div>
+
+  <p id="manni"> industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+    and scrambled it to make a type specimen book. It has survived not only five centuries, but also 
+    the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 
+    1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+     desktop publishing
+    </p>
+
+</body>
+<script>
+//Assign Events Using the HTML DOM-:
+    var a;
+   // document.getElementById("header").onclick = abc;
+
+    document.getElementById("header").onmouseenter = abc;
+
+    function abc(){
+     document.getElementById("header").style.background = "green";
+    }
+
+//DOM addEventListener() Method -:
+   document.getElementById("manni").addEventListener("mouseenter",xyz);
+
+   document.getElementById("manni").addEventListener("click",function(){
+     //  document.getElementById("manni").style.border ="10px solid red";
+     this.style.border="10px solid red";
+   });
+
+   
+  function xyz(){
+   document.getElementById("manni").style.background = "green";
+
+
+ 
+    }
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript isArray method</title>
+    <script>
+        var a=["Sanjay","Rahul","Rocky"];
+        document.write(a + "<br> <br>");
+
+        var b = Array.isArray(a);
+        document.write(b + "<br> <br>");
+
+        var c = 20;
+      //  Array.isArray(c);
+        document.write(Array.isArray(c) + "<br> <br>");
+
+        var d = "Rahul";
+        document.write(Array.isArray(d) + "<br> <br>");
+
+
+
+        var e = "Manish";
+        document.write(e + "<br> <br>");
+
+        if(Array.isArray(e))
+        {
+            document.write("This is an Array");
+        }
+        else
+        {
+            document.write("This is not an Array");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

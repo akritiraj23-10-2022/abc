@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM query selector</title>
+</head>
+<body>
+
+    <div id = "header"  class ="abc" style="border:3px dotted red"> 
+        <h1> yahoo Baba </h1>
+        </div>
+    <p id = "demo"></p>
+
+
+<script>
+var x;
+     document.querySelector("#header").innerHTML = "<h1> Manish Kumar </h1>";
+     x=document.querySelector("#header").getAttribute("class");
+    console.log(x);
+    document.write(x);
+
+</script>
+</body>
+</html>

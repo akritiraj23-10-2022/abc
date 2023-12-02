@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and clearInterval </title>
+    <style>
+        #test{
+            width:150px;
+            height:150px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"> </div>
+
+
+
+    <script>
+
+        var a =0;
+    var id = setInterval(anim,500);
+
+     function anim(){
+         a = a+ 10;
+
+         if(a==1000)
+         {
+        clearInterval(id);
+         }
+         else
+         {
+            var target = document.getElementById("test");
+        target.style.height = a + "px";  
+         }
+        
+        // console.log(a);
+     }
+    </script>
+</body>
+</html>

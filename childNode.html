@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>children and childNodes </title>
+        <style>
+        #outer{
+            width:600px;
+            height:300px;
+            margin: 0 auto;
+            background-color:gold;
+        }
+        #inner{
+            width:550px;
+            height:900;
+            margin:50px  auto;
+            background-color: pink;
+         
+        }
+        #inner div{
+            width:40px;
+            height:50px;
+            margin:10px;
+            background-color: blue;
+            float:left;
+            text-align:center;
+
+        }
+         
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <h2> Outer</h2>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div>A</div>
+            <div>B</div>
+            <div id="child-C">C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+    </div>
+    <script>
+
+        //children-:
+     /*   var a =document.getElementById("inner").children[1].style.background = "grey";
+        console.log(a);
+        */
+
+    //childNode-:
+   /* document.getElementById("inner").childNodes[3].style.background = "red";
+   var a = document.getElementById("inner").childNodes;
+    console.log(a);
+    */
+
+    //firstElementChild-:
+
+    document.getElementById("outer").firstElementChild.style.background = "red";
+    var a = document.getElementById("outer").firstElementChild.innerHTML;
+    console.log(a);
+
+    //lastElementChild-:
+    document.getElementById("inner").lastElementChild.style.background = "grey";
+    var b = document.getElementById("inner").lastElementChild;
+    console.log(b);
+
+    //firstChild-:
+
+   // document.getElementById("inner").firstChild.style.background = "green";
+    var b = document.getElementById("inner").firstChild;
+    console.log(b);
+
+  //lastchild-:
+  var b = document.getElementById("inner").lastChild;
+    console.log(b);
+
+
+ //nextElementSibling-:
+ document.getElementById("child-C").nextElementSibling.style.background = "white";
+ var b = document.getElementById("child-C").nextElementSibling;
+    console.log(b);
+
+ //previousElementSibling-:
+ document.getElementById("child-C").previousElementSibling.style.background = "brown";
+ var b = document.getElementById("child-C").previousElementSibling.innerHTML;
+    console.log(b);
+
+ //previousSibling-:
+ var b = document.getElementById("child-C").previousSibling;
+    console.log(b);
+
+ //nextSibling-:
+ var b = document.getElementById("child-C").nextSibling;
+    console.log(b);
+
+
+    </script>
+</body>
+</html>

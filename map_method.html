@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array map() method</title>
+    <script>
+        var ary = [1,2,3,4,5,6,7,8,9,10];
+
+        var b = ary.map(multiply);
+
+        document.write(b);
+
+        function multiply(x)
+        {
+            return x * 5 + "<br>";
+        }
+
+
+        var ary = [
+            {fname : "Manish" , lname : "Kumar"},
+            {fname : "Aman" , lname : "choudhary"},
+            {fname : "Karan" , lname : "Sharma"},
+           ];
+
+        var b = ary.map(test);
+
+        document.write(b + "<br>");
+
+        function test(x)
+        {
+            return x.fname + " " + x.lname + "<br>";
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
